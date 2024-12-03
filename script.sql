@@ -3,16 +3,16 @@ CREATE DATABASE pointel;
 USE pointel;
 CREATE TABLE pointo (
     ID INT AUTO_INCREMENT PRIMARY KEY,
-    countries VARCHAR(250) NOT NULL,
-    continents VARCHAR(250) NOT NULL,
-    cars VARCHAR(250) NOT NULL
+    countries VARCHAR(200) NOT NULL,
+    continents VARCHAR(200) NOT NULL,
+    cars VARCHAR(200) NOT NULL
 );
 
-INSERT INTO pointo (countries, continents, cars) VALUES ('Nigeria', 'Africa', 'BENZ');
-INSERT INTO pointo (countries, continents, cars) VALUES ('United State', 'North America', 'BMW');
-INSERT INTO pointo (countries, continents, cars) VALUES ('Canada', 'North America', 'Range Rover');
-INSERT INTO pointo (countries, continents, cars) VALUES ('South Korea', 'Asia', 'Ferrari');
-INSERT INTO pointo (countries, continents, cars) VALUES ('China', 'Asia', 'Lamborghini');
+INSERT INTO pointo (countries, continents, cars) VALUE ('Nigeria', 'Africa', 'BENZ');
+INSERT INTO pointo (countries, continents, cars) VALUE ('United State', 'North America', 'BMW');
+INSERT INTO pointo (countries, continents, cars) VALUE ('Canada', 'North America', 'Range Rover');
+INSERT INTO pointo (countries, continents, cars) VALUE ('South Korea', 'Asia', 'Lamborghini');
+INSERT INTO pointo (countries, continents, cars) VALUE ('Russia', 'Europe', 'Ferrari');
 
 SELECT * FROM pointo
 WHERE countries='Nigeria';
