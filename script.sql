@@ -14,4 +14,5 @@ INSERT INTO pointo (countries, continents, cars) VALUES ('Canada', 'North Americ
 INSERT INTO pointo (countries, continents, cars) VALUES ('South Korea', 'Asia', 'Ferrari');
 INSERT INTO pointo (countries, continents, cars) VALUES ('China', 'Asia', 'Lamborghini');
 
-SELECT COUNT(DISTINCT countries) FROM pointo;
+SELECT * FROM pointo
+WHERE countries='Nigeria';
