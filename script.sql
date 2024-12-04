@@ -15,4 +15,4 @@ INSERT INTO pointo (countries, continents, cars) VALUE ('South Korea', 'Asia', '
 INSERT INTO pointo (countries, continents, cars) VALUE ('Russia', 'Europe', 'Ferrari');
 
 SELECT * FROM pointo
-WHERE countries='Nigeria';
+WHERE ID < 4;
