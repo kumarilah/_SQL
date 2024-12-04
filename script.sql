@@ -3,9 +3,9 @@ CREATE DATABASE pointel;
 USE pointel;
 CREATE TABLE pointo (
     ID INT AUTO_INCREMENT PRIMARY KEY,
-    countries VARCHAR(200) NOT NULL,
-    continents VARCHAR(200) NOT NULL,
-    cars VARCHAR(200) NOT NULL
+    countries CHAR(200) NOT NULL,
+    continents CHAR(200) NOT NULL,
+    cars CHAR(200) NOT NULL
 );
 
 INSERT INTO pointo (countries, continents, cars) VALUE ('Nigeria', 'Africa', 'BENZ');
@@ -15,4 +15,4 @@ INSERT INTO pointo (countries, continents, cars) VALUE ('South Korea', 'Asia', '
 INSERT INTO pointo (countries, continents, cars) VALUE ('Russia', 'Europe', 'Ferrari');
 
 SELECT * FROM pointo
-WHERE ID < 4;
+ORDER BY ID;
